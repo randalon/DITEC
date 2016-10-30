@@ -1,0 +1,57 @@
+// Astrid
+// objetivo: busqueda binaria
+
+void busquedaBinaria (void) {
+	//Declaracion de variables
+
+    const int MAX=10;
+	float n[MAX],buscar;
+	int i, j, x, min, maxim,mitad;
+	
+    //entrada de datos
+	cout << "Este programa busca un valor en una serie de numeros" << endl;
+	for (i=0;i<MAX;i++)  {
+	  cout << "Escribe el numero " << i+1 << ": ";
+	  cin >> n[i];
+	}
+	
+    for (i=0;i<MAX;i++)
+	    cout << n[i] << " ";
+    cout << endl;
+
+	for (i=9;i>=0;i--)  {
+		for (j=0;j<i;j++)  {
+			if (n[j]>n[j+1])    {
+			x=n[j];
+			n[j]=n[j+1];
+			n[j+1]=x;
+			}
+		}
+	}
+    
+    for (i=0;i<MAX;i++)
+	   cout << n[i] << " ";
+	cout << endl;
+	
+    cout << "Escribe el numero que quieres buscar: ";
+	cin >> buscar;
+	min=0;
+	maxim=9;
+	
+    while (min<maxim)   {
+		mitad=(min+maxim)/2;
+		if (n[mitad]==buscar)
+		    break;
+		if (n[mitad]<buscar)
+		    min=mitad;
+		else
+			maxim=mitad;
+
+	}
+	
+    if (maxim<=min)
+	     cout << "El numero que buscas no esta en el arreglo"  << endl;
+	else
+	     cout << "el numero esta en la posicion " << mitad << endl;
+
+}  // busquedaBinaria
