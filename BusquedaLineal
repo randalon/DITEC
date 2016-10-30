@@ -1,0 +1,33 @@
+// Astrid
+// Objetivo: busqueda lineal
+
+void BusquedaSecuencial (void) {
+
+	//Declaracion de variables
+    const int MAX=10;
+	int n[MAX],i, buscar;
+
+	//entrada de datos
+	cout << "Busqueda Lineal o Secuencial" << endl;
+
+	for (i=0;i<MAX;i++)  {
+	  cout << "Escribe el numero " << i+1 << ": ";
+	  cin >> n[i];
+	}
+    
+	cout << "Escribe el numero que quieres buscar: ";
+	cin >> buscar;
+	i=0;
+	
+    do {
+		if (n[i]==buscar)
+		   break;
+		i++;
+	} while (i<MAX);
+	
+    if (i!=MAX)
+	   cout << "El numero que buscas esta en la posicion " << i+1 << endl;
+	else
+	   cout << "El valor que buscas no se encontro en el arreglo" << endl
+
+}  // BúsquedaSecuencial
