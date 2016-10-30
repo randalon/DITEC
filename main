@@ -1,0 +1,50 @@
+// Fecha: 10 de octubre 2016
+// Autor: REBECA
+// Objetivo: Métodos de Ordenamiento y Búsqueda
+
+#include<iostream>
+using namespace std;
+
+int main(void) {
+	int opcion;
+    
+	cout << "Metodos de odenamiento y búsqueda" << endl;
+	cout << "=================================" << endl;
+    cout << " 1. Búsqueda secuencial" << endl;
+    cout << " 2. Búsqueda binaria" << endl;
+    cout << " 3. Ordenamiento por Selección Directa" << endl;
+    cout << " 4. Ordenamiento por Inserción Directa" << endl;
+    cout << " 5. Ordenamiento por Inserción Binaria" << endl;
+    cout << " 6. Ordenamiento por Burbuja" << endl;
+    cout << " 7. Ordenameinto por QuickSort" << endl;
+    cout << " 8. Ordenamiento por ShellSort" << endl;
+    cout << " 9. Ordenamiento por MergeSort" << endl;
+    cout << "10. Ordenamiento por HeapSort" << endl;
+    cout << "11. Ordenamiento por Radix" << endl;
+    cout << "12. Tablas Hash" << endl;
+    cout << "=================================" << endl;
+    cout << "Digita tu opción --> ";
+    cin >> opcion;
+    
+    switch(opcion) {
+        case 1:
+            BusquedaSecuencial();
+            break;
+            
+        case 2:
+            BusquedaBinaria();
+            break;
+            
+        case 3:
+            OrdenamientoSeleccion();
+            break;
+            
+        default:
+            cout << "Opcion No valida." << endl;
+            break;
+            
+    } // switch
+    
+    return(0);
+    
+} // main
