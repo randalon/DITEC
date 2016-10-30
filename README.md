@@ -3,7 +3,7 @@
 # Actividad: Métodos de Búsqueda y Ordenamiento
 # Materia: Estructuras de Datos
 # Profesor: Irma Rebeca Andalón García
-# ===================================
+# ==================================
 
 Bienvenidos estudiantes del curso Estructuras de datos!
 
